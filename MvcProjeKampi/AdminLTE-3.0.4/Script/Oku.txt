@@ -1,0 +1,4 @@
+Bu script tarafýndan sosyalhit.com'dan alýnmýþtýr..
+www.hile-makale.blogspot.com/pb-hileleri.tk
+
+Direk sayfada durmasýný istiyoranýz 404.htm'yi index.php olarak deðiltirip atabilirsiniz..

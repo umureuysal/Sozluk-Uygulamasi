@@ -1,0 +1,30 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "KategoriGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kategori Güncelle</h2>
+<br />
+@using (Html.BeginForm("KategoriGuncelle", "AdminCategory", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kategori ID : ")
+    @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryID)
+    <br />
+    @Html.Label("Kategori: ")
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryName)
+    <br />
+    @Html.Label("Durum: ")
+    @Html.TextBoxFor(x => x.CategoryStatus, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryStatus)
+    <br />
+    @Html.Label("Açıklama: ")
+    @Html.TextAreaFor(x => x.CategoryDescription, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryDescription)
+    <button class="btn btn-primary">Kaydet</button>
+</div>
+}
+

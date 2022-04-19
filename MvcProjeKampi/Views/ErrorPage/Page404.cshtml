@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Language" content="tr">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+    <title>Nayır Nolamaz!</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("audio").play();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2 style="font-family:Verdana">Yolunu mu kaybettin yabancı?</h2>
+        <h4 style="font-family:Verdana">Buralar güzeldir ama olur da geri dönmek istersen <a href="/Contact/Index/">tık</a></h4>
+        <embed src="~/Audio/audio.mp3" loop="true" autostart="true" width="2" height="0">
+        <audio id="audio" src="~/Audio/audio.mp3" autoplay="autoplay" loop="loop"></audio>
+        <audio>
+            <source src="~/Audio/audio.mp3" type="audio/mpeg" />
+        </audio>
+        <p align="center">
+            <img border="0" src="~/AdminLTE-3.0.4/Script/orhan.jpg" width="990" height="735">
+        </p>
+        </p>
+        @* <center><embed class="beeplayer" wmode="transparent" style="height:100px;width:600px;" src="" quality="high" bgcolor="#ffffff" width="290" height="24" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="autostart=yes&amp;soundFile=http://sosyalhit.com/404/orhan.mp3"></center>*@
+
+    </div>
+
+</body>
+</html>
